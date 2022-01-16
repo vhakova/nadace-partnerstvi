@@ -23,23 +23,29 @@
         letter-spacing: 2px;
 
         &:hover {
-            color: colors.$button-title--tertiary;
+            color: colors.$button-title--secondary;
         }
 
         @media screen and (min-width: 1200px) {
             font-size: 25px;
+            transition: .5s;
         }
 
         &--light {
             text-decoration: none;
-            color: colors.$button-title--secondary;
+            color: colors.$button-title--primary;
             font-family: 'Montserrat', sans-serif;
             font-weight: 600;
             letter-spacing: 2px;
-            font-size: 25px;
+            font-size: 20px;
+            
+            @media screen and (min-width: 1000px) {
+                font-size: 25px;
+                transition: .5s;
+            }
 
             &:hover {
-                color: colors.$button-title--primary;
+                color: colors.$button-title--secondary;
             }
         }
     }
@@ -53,6 +59,7 @@
 
         @media screen and (min-width: 1000px) {
             margin-top: 25px;
+            transition: .5s;
         }
 
 
