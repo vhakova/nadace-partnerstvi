@@ -1,0 +1,17 @@
+@use 'colors';
+
+.slideshow {
+
+    @media screen and (min-width: 1000px) {
+        display: none;
+    }
+}
+
+.slideImg {
+    width: 100%;
+    box-shadow: 0 1px 10px colors.$bcg-menu-bubble-opp56;
+    position: absolute;
+    transition: opacity .8s ease-in;
+}
+
+.slideImg + .slideImg { opacity: 0; }
