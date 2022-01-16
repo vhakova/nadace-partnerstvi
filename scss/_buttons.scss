@@ -1,0 +1,63 @@
+@use 'colors';
+
+.vote-button {
+    background-color: colors.$bcg-button--primary;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px colors.$bcg-menu-bubble-opp1;
+    margin-top: 10px;
+    font-size: 16px;
+    padding: 10px 30px;
+    -webkit-appearance: none;
+
+    @media screen and (min-width: 1200px) {
+        float: left;
+    }
+
+    &__title {
+        text-decoration: none;
+        color: colors.$white;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        letter-spacing: 2px;
+
+        &:hover {
+            color: colors.$button-title--tertiary;
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 25px;
+        }
+
+        &--light {
+            text-decoration: none;
+            color: colors.$button-title--secondary;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            letter-spacing: 2px;
+            font-size: 25px;
+
+            &:hover {
+                color: colors.$button-title--primary;
+            }
+        }
+    }
+
+    &--light {
+        background-color: colors.$white;
+        border: 1px solid colors.$bcg-button--secondary;
+        padding: 10px 30px;
+        border-radius: 5px;
+        margin-top: 16px;
+
+        @media screen and (min-width: 1000px) {
+            margin-top: 25px;
+        }
+
+
+        &:hover {
+            border: 1px solid colors.$button-title--primary;
+        }
+    }
+}

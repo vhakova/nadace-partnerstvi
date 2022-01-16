@@ -1,0 +1,41 @@
+@use 'colors';
+
+.article {
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+
+    @media screen and (min-width: 600px) {
+        width: 80%;
+    }
+
+    @media screen and (min-width: 1000px) {
+        font-size: 25px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        padding: 40px 0;
+        max-width: 1200px;
+        margin: 100px auto;
+    }
+
+
+    &__title {
+        color: colors.$article-title;
+        margin-top: 0;
+        font-size: 30px;
+
+        @media screen and (min-width: 1000px) {
+            font-size: 40px;
+        }
+    }
+
+    &__text {
+        margin: 20px 0;
+
+        @media screen and (min-width: 1000px) {
+            margin: 40px 0;
+        }
+    }
+}
