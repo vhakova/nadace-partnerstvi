@@ -78,7 +78,6 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .menu-top__list {
-    font-size: 20px;
     background-color: rgba(121, 89, 93, 0.76);
     border-radius: 10px;
     margin-right: 40px;
@@ -94,7 +93,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .menu-top__item {
-    padding: 20px 30px;
+    padding: 10px 30px;
     text-align: center;
     transition: 0.5s;
   }
