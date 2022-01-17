@@ -514,28 +514,14 @@ body {
 }
 @media screen and (min-width: 1000px) {
   .social-media {
-    justify-content: right;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .social-media {
-    margin-right: 100px;
-  }
-}
-@media screen and (min-width: 2000px) {
-  .social-media {
-    margin-right: 160px;
+    grid-column: 2/-1;
+    justify-content: center;
   }
 }
 .social-media__img {
   height: 40px;
 }
 @media screen and (min-width: 1000px) {
-  .social-media__img {
-    padding: 0 40px;
-  }
-}
-@media screen and (min-width: 1200px) {
   .social-media__img {
     padding: 0 40px;
   }
