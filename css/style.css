@@ -346,13 +346,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .gallery {
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    width: 90%;
-    margin: 40px auto;
-    box-sizing: border-box;
-    margin: 100px auto;
+    margin: 100px auto 150px auto;
   }
 }
 .gallery__item {
@@ -454,7 +449,7 @@ body {
 }
 @media screen and (min-width: 600px) {
   .slideshow {
-    margin-bottom: 500px;
+    margin-bottom: 600px;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -649,6 +644,11 @@ body {
   color: white;
 }
 
+.donate-section {
+  background-image: url(/images/slideImg/bluredTree.jpg);
+  background-size: cover;
+}
+
 .form {
   text-align: center;
 }
@@ -664,14 +664,26 @@ body {
 .form .payment__type--last {
   padding-bottom: 80px;
 }
+@media screen and (min-width: 1000px) {
+  .form-section--last,
+.form .payment__type--last {
+    padding-bottom: 0;
+  }
+}
 .form-box {
   padding: 30px;
   text-align: center;
+  background-color: white;
 }
-
-.frequency__type,
-.payment__type {
-  text-align: left;
+@media screen and (min-width: 1000px) {
+  .form-box {
+    max-width: 600px;
+    margin: auto;
+    border: 2px dashed #e77327;
+    padding: 80px;
+    margin: 0 auto;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .first-name,
