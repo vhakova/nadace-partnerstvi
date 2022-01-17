@@ -169,13 +169,122 @@
             <img class="gallery__img" src="/images/slideImg/bluredTree.jpg">
             <div class="gallery__title"><p>Pokračovat v prohlížení</p></div>
         </a>
+    </div>
 
-      </div>
-      <!--Gallery end-->
+    <!--Gallery end-->
 
-      <!--Footer start-->
-      <footer class="footer">
+    <!--Donation start-->
 
+    <div class="form-box">
+        <div>
+            <h3 class="article__title">Podpořte Strom Roku</h3>
+            <p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eveniet omnis, corrupti ducimus incidunt possimus, impedit quam dicta dolore quae consectetur minima exercitationem! Architecto obcaecati sunt, vel esse autem veritatis.</p>
+        </div>
+
+        <div class="form">
+
+            <div class="form__item">
+                <h4 class="subtitle">Chci darovat:</h4>
+
+                <div class="form-section">
+                    <div class="frequency__type">
+                        <input type="radio" checked name="frequency" value="monthly">
+                        <label for="monthly">&nbsp;Měsíčně</label>
+                    </div>              
+                    
+                    <div class="frequency__type">
+                        <input type="radio" name="frequency" value="once">
+                        <label for="once">&nbsp;Jednorázově</label>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="form__item">
+                <h4 class="subtitle">Kolik chci přispět:</h4>
+
+                <div class="amount__type">
+                    <input type="radio" checked name="amount" value="200">
+                    <label for="200">&nbsp;200 Kč</label>
+                </div>
+
+                <div class="amount__type">
+                    <input type="radio" checked name="amount" value="500">
+                    <label for="500">&nbsp;500 Kč</label>
+                </div>
+
+                <div class="amount__type">
+                    <input type="radio" checked name="amount" value="1000">
+                    <label for="1000">&nbsp;1000 Kč</label>
+                </div>
+
+                <div class="amount__type">
+                    <input type="radio" checked name="amount" value="5000">
+                    <label for="5000">&nbsp;5000 Kč</label>
+                </div>
+
+            </div>
+
+            <div class="form__item">
+                <h4 class="subtitle">Mé údaje:</h4>
+
+                <div class="form-section--id">            
+                
+                    <div class="name">
+                        <div class="first-name">
+                            <input type="text" placeholder="Jméno">
+                        </div>
+    
+                        <div class="last-name">
+                            <input type="text" placeholder="Příjmení">
+                        </div>
+                    </div>
+                    
+                    <div class="contact">
+                        <div class="email">
+                            <input type="email" placeholder="E-mail">
+                        </div>
+    
+                        <div class="phone">
+                            <input type="tel" placeholder="Telefon">
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            <div class="form__item">
+                <h4 class="subtitle">Chci zaplatit:</h4>
+
+                <div class="payment__type">
+                
+                    <div>
+                        <input type="radio" id="card">
+                        <label for="card">online</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" id="transfer">
+                        <label for="transfer">převodem</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form__item">
+                <div class="form-section--last">
+                    <button class="vote-button--light"> <a class="vote-button__title--light donate" href="#">Přejít k platbě</a></button>
+                </div>
+            </div>   
+
+        </div>
+    </div> 
+
+    <!---Donation end-->
+
+    <!--Footer start-->
+    <footer class="footer">
 
         <div class="menu-box">
 
@@ -209,13 +318,13 @@
                 </ul>
 
             </nav>
-    
+
             <div class="contacts">
                 <div class="adress">
                     <h6 class="adress__title">Nadace Partnerství</h6>
                     <p class="adress__text">Údolní 33, Brno</p>
                 </div>
-    
+
                 <div class="tel-mail">
                     <a class="tel-mail__link" href="tel:+420123456789">+420 123 456 789</a>
                     <a class="tel-mail__link" href="mailto:email@email.com">mail@mail.com</a>
@@ -223,16 +332,15 @@
             </div>
 
         </div>
-
         
         <p class="footer__text">&copy; Copyright 2022</p>
 
-      </footer>
+    </footer>
 
-      <!---Footer end-->
+    <!---Footer end-->
 
-      <!--Scripts start-->
-      <script id="slideshow">
+    <!--Scripts start-->
+    <script id="slideshow">
 
         var current = 0,
             slides = document.getElementsByClassName("slideImg");
@@ -244,8 +352,10 @@
         current = (current != slides.length - 1) ? current + 1 : 0;
         slides[current].style.opacity = 1;
         }, 10000);
-      </script>
+    </script>
 
-      <!--Scripts end-->
+    <!--Scripts end-->
+    
 </body>
+
 </html>

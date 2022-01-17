@@ -279,6 +279,10 @@ body {
   border: 1px solid #e77327;
 }
 
+.donate {
+  font-size: 16px;
+}
+
 .article {
   padding: 0 40px;
   text-align: center;
@@ -450,7 +454,7 @@ body {
 }
 @media screen and (min-width: 600px) {
   .slideshow {
-    margin-bottom: 600px;
+    margin-bottom: 500px;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -643,4 +647,36 @@ body {
 .menu-footer__link {
   text-decoration: none;
   color: white;
+}
+
+.form {
+  text-align: center;
+}
+.form__item {
+  padding: 20px 0;
+}
+.form-section,
+.form .payment__type {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.form-section--last,
+.form .payment__type--last {
+  padding-bottom: 80px;
+}
+.form-box {
+  padding: 30px;
+  text-align: center;
+}
+
+.frequency__type,
+.payment__type {
+  text-align: left;
+}
+
+.first-name,
+.last-name,
+.email,
+.phone {
+  padding: 10px 0;
 }/*# sourceMappingURL=style.css.map */

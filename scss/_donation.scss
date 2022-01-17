@@ -1,0 +1,35 @@
+.form {
+    text-align: center;
+
+    &__item {
+        padding: 20px 0;
+    }
+
+    &-section,
+    .payment__type {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        &--last {
+            padding-bottom: 80px;
+        }
+    }
+
+    &-box {
+        padding: 30px;
+        text-align: center;
+    }
+}
+
+.frequency__type,
+.payment__type {
+    text-align: left;
+}
+
+.first-name,
+.last-name,
+.email,
+.phone {
+    padding: 10px 0;
+}
