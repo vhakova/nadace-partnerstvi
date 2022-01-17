@@ -320,9 +320,6 @@ body {
   text-decoration: none;
   color: black;
 }
-.article__text:hover {
-  color: #e77327;
-}
 @media screen and (min-width: 1000px) {
   .article__text {
     margin: 40px 0;
