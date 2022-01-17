@@ -74,6 +74,8 @@
             <h2 class="article__title">Vítězné stromy minulých let</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem voluptates reprehenderit cupiditate expedita nobis nesciunt animi odio repellat id ex. Excepturi harum optio aliquid. Porro labore natus voluptas quos saepe?
             </p>
+
+            <a class="gallery__link" href="#">Chci se dozvědět o vítězných stromech více</a>
         </div>
 
         <img class="slideImg" src="/images/slideImg/2020.jpg">
@@ -95,10 +97,7 @@
         <img class="slideImg" src="/images/slideImg/2004.jpg">
         <img class="slideImg" src="/images/slideImg/2003.jpg">
         <img class="slideImg" src="/images/slideImg/2002.jpg">
- 
     </div>
-
-    
 
     <!--Slideshow end-->
 
@@ -174,7 +173,63 @@
       </div>
       <!--Gallery end-->
 
+      <!--Footer start-->
+      <footer class="footer">
+        <div class="social-media">
+            <a href="#"><img class="social-media__img" src="/images/twitter.png" alt="twitter"></a>
+            <a href="#"><img class="social-media__img" src="/images/facebook.png" alt="twitter"></a>
+            <a href="#"><img class="social-media__img" src="/images/instagram.png" alt="twitter"></a>
+        </div>
 
+        <div class="menu-box">
+
+            <nav class="menu-footer">
+
+                <ul class="menu-footer__list">    
+                    <li class="menu-footer__item--first">
+                        <a class="menu-footer__link" href="#">O anketě</a>
+                    </li>
+                    <li class="menu-footer__item">
+                        <a class="menu-footer__link" href="#">Minulí vítězové</a>
+                    </li>
+                    <li class="menu-footer__item">
+                        <a class="menu-footer__link" href="#">Podpořte nás</a>
+                    </li>
+                    <li class="menu-footer__item--last">
+                        <a class="menu-footer__link" href="#">Nadace Partnerství</a>
+                    </li>
+                    <li class="menu-footer__item--last">
+                        <a class="menu-footer__link" href="#">Pro média</a>
+                    </li>
+                    <li class="menu-footer__item--last">
+                        <a class="menu-footer__link" href="#">Kontakt</a>
+                    </li>
+                </ul>
+
+            </nav>
+    
+            <div class="contacts">
+                <div class="adress">
+                    <h6 class="adress__title">Nadace Partnerství</h6>
+                    <p class="adress__text">Údolní 33, Brno</p>
+                </div>
+    
+                <div class="tel-mail">
+                    <a class="tel-mail__link" href="tel:+420123456789">+420 123 456 789</a>
+                    <a class="tel-mail__link" href="mailto:email@email.com">mail@mail.com</a>
+                </div>
+            </div>
+
+        </div>
+
+        
+        <p class="footer__text">&copy; Copyright 2022</p>
+
+      </footer>
+
+      <!---Footer end-->
+
+      <!--Scripts start-->
       <script id="slideshow">
 
         var current = 0,
@@ -187,7 +242,8 @@
         current = (current != slides.length - 1) ? current + 1 : 0;
         slides[current].style.opacity = 1;
         }, 10000);
-
       </script>
+
+      <!--Scripts end-->
 </body>
 </html>

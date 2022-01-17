@@ -113,7 +113,12 @@
             font-weight: bold;
          }
     }
-  
+
+    &__link {
+        text-decoration: none;
+        color: colors.$article-text--secondary;
+        font-weight: 600;
+    }
 }
 
 .next {

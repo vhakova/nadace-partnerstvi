@@ -99,7 +99,7 @@ body {
     transition: 0.5s;
   }
   .menu-top__item:hover {
-    background-color: #e77327;
+    background-color: #e77427;
   }
 }
 .menu-top__item--first {
@@ -117,7 +117,7 @@ body {
     transition: 0.5s;
   }
   .menu-top__item--first:hover {
-    background-color: #e77327;
+    background-color: #e77427;
     border-radius: 5px 0 0 5px;
   }
 }
@@ -136,7 +136,7 @@ body {
     transition: 0.5s;
   }
   .menu-top__item--last:hover {
-    background-color: #e77327;
+    background-color: #e77427;
     border-radius: 0 5px 5px 0;
   }
 }
@@ -214,7 +214,7 @@ body {
 }
 
 .vote-button {
-  background-color: #e77327;
+  background-color: #e77427;
   border: none;
   padding: 10px;
   border-radius: 5px;
@@ -434,11 +434,25 @@ body {
 .gallery__title::first-line {
   font-weight: bold;
 }
+.gallery__link {
+  text-decoration: none;
+  color: #e77327;
+  font-weight: 600;
+}
 
 .next {
   text-decoration: none;
 }
 
+.slideshow {
+  position: relative;
+  margin-bottom: 300px;
+}
+@media screen and (min-width: 600px) {
+  .slideshow {
+    margin-bottom: 600px;
+  }
+}
 @media screen and (min-width: 1000px) {
   .slideshow {
     display: none;
@@ -454,4 +468,193 @@ body {
 
 .slideImg + .slideImg {
   opacity: 0;
+}
+
+.footer {
+  background-color: #79595d;
+  margin: 0;
+  min-height: 200px;
+}
+@media screen and (min-width: 1000px) {
+  .footer {
+    padding: 20px 60px 0 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding: 20px 0 0 60px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .footer {
+    padding: 40px 0 0 120px;
+  }
+}
+.footer__text {
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+@media screen and (min-width: 1000px) {
+  .footer__text {
+    padding: 40px 0;
+  }
+}
+
+.social-media {
+  display: flex;
+  padding: 40px;
+  justify-content: space-between;
+}
+@media screen and (min-width: 600px) {
+  .social-media {
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .social-media {
+    justify-content: right;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .social-media {
+    margin-right: 100px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .social-media {
+    margin-right: 160px;
+  }
+}
+.social-media__img {
+  height: 40px;
+}
+@media screen and (min-width: 1000px) {
+  .social-media__img {
+    padding: 0 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .social-media__img {
+    padding: 0 40px;
+  }
+}
+
+.contacts {
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  line-height: 2;
+  font-weight: 300;
+}
+
+.adress {
+  position: relative;
+}
+.adress::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  background-color: #e77327;
+  width: 15%;
+  top: 100%;
+  left: 43%;
+  padding: 0;
+}
+.adress__title {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0;
+  color: #e77327;
+  background-color: rgba(255, 255, 255, 0.76);
+}
+@media screen and (min-width: 1000px) {
+  .adress__title {
+    margin: 0 80px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .adress__title {
+    margin: 0 120px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .adress__title {
+    margin: 0 240px;
+  }
+}
+.adress__text {
+  padding: 20px;
+  margin: 0;
+}
+
+.tel-mail {
+  padding: 20px;
+  position: relative;
+}
+.tel-mail::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  background-color: #e77327;
+  width: 15%;
+  top: 100%;
+  left: 43%;
+  padding: 0;
+}
+.tel-mail__link {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 5px;
+}
+
+@media screen and (min-width: 1000px) {
+  .menu-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.menu-footer {
+  display: none;
+}
+@media screen and (min-width: 1000px) {
+  .menu-footer {
+    display: block;
+    line-height: 3;
+    text-transform: uppercase;
+    padding: 0;
+    margin: -80px 0 0 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu-footer {
+    position: relative;
+  }
+  .menu-footer::after {
+    position: absolute;
+    background-image: url(/images/logo-color.png);
+    background-size: 200px 100px;
+    display: inline-block;
+    height: 100px;
+    width: 200px;
+    top: 60%;
+    right: 20%;
+    content: "";
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 2000px) {
+  .menu-footer::after {
+    right: 50%;
+  }
+}
+.menu-footer__list {
+  list-style: none;
+}
+.menu-footer__link {
+  text-decoration: none;
+  color: white;
 }/*# sourceMappingURL=style.css.map */
