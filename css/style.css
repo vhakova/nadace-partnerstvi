@@ -199,7 +199,7 @@ body {
 @media screen and (min-width: 1200px) {
   .bubble__title {
     padding-top: 10%;
-    font-size: 40px;
+    font-size: 30px;
     text-align: left;
   }
 }
@@ -240,7 +240,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .vote-button__title {
-    font-size: 25px;
+    font-size: 20px;
     transition: 0.5s;
   }
 }
